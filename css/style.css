@@ -4,20 +4,87 @@
  * date: 20200320
  **/
 
+/* google fonts (load before anything else!) */
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@700&family=Open+Sans:wght@300&family=Spicy+Rice&display=swap');
+
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+
+    /* design colors */
+    --main-bg-color: #eaadea;
+    --dark: #000;
+    --hell: #fff;
+    --col_1: #adeaea;
+    --col_2: #d8e241;
+    --col_3: #41d8e2;
+    --col_4: #4c41e2;
+    /** 
+     * usage
+    
+    font-family: 'Spicy Rice', cursive;
+    font-family: 'Muli', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    
+     **/
+
+    /* display */
+    --display: 'Spicy Rice', cursive;
+
+    /* headers */
+    --myHeaders: 'Muli', sans-serif;
+
+    /* text */
+    --text: 'Open Sans', sans-serif;
+
+    /* textures */
+    --nightClub: url(../billeder/club-seamless.JPG);
+
 }
 
 body {
-    font-family: Verdana;
-    color: #aaaaaa;
+    background-color: var(--main-bg-color);
+    color: var(--dark);
+    font-family: var(--text);
 }
 
+h1 {
+    font-family: var(--display);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--myHeaders);
+
+}
+
+img {
+    max-width: 100%;
+}
+
+figcaption {
+    position: relative;
+    top: -150px;
+    font-size: 2.456rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+
+}
 
 .menu {
     float: left;
     width: 20%;
     text-align: center;
+    background-image: var(--nightClub);
+    padding: 1.234rem;
 }
 
 .menu a {
@@ -42,13 +109,15 @@ main {
     padding: 15px;
     margin-top: 7px;
     /*text-align: center;*/
+    background-image: url(../billeder/club-seamless.JPG);
+    color: var(--hell);
 }
 
 /* layout styles */
 header {
-    background-color: #e5e5e5;
     padding: 15px;
     text-align: center;
+    background-color: var(--col_2);
 }
 
 #wrap {
@@ -60,6 +129,7 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: 7px;
+    background-color: var(--col_1);
 }
 
 /* SEO content exaggerated */
@@ -69,12 +139,54 @@ footer {
 
 /* ... one breakpoint here, you need three ... */
 /* PS: in mobile first, the mobile is where we begin device optimization */
+
+/* Mobile First */
+
+/**
+ * 1. Begin with the smallest device, e.g. mobile
+ **/
 @media only screen and (max-width:620px) {
 
-    /* For mobile phones: */
-    .menu,
-    .main,
-    .right {
-        width: 100%;
+    body {
+        background-color: var(--col_3);
+        padding: 0px;
+        margin: 0px;
+        font-size: larger;
     }
+
+    
+    /* headings */
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: var(--hell);
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+ 
+    /* layout */ 
+    #wrap,
+    header,
+    footer,
+    .right,
+    .menu,
+    main,
+    figure,
+    img,
+    p {
+        display: block;
+        width: 100%;
+        padding: 0px;
+        background-color: var(--col_2);
+        color: var(--dark);
+    }    
 }
+
+
+/**
+ * 2. continue with a larger device, e.g. iPad, tablet
+ **/
+
