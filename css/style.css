@@ -7,6 +7,13 @@
 /* google fonts (load before anything else!) */
 @import url('https://fonts.googleapis.com/css2?family=Muli:wght@700&family=Open+Sans:wght@300&family=Spicy+Rice&display=swap');
 
+/** 
+ * usage   
+    font-family: 'Spicy Rice', cursive;
+    font-family: 'Muli', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+**/
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -23,14 +30,6 @@
     --col_2: #d8e241;
     --col_3: #41d8e2;
     --col_4: #4c41e2;
-    /** 
-     * usage
-    
-    font-family: 'Spicy Rice', cursive;
-    font-family: 'Muli', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    
-     **/
 
     /* display */
     --display: 'Spicy Rice', cursive;
@@ -52,65 +51,35 @@ body {
     font-family: var(--text);
 }
 
-h1 {
-    font-family: var(--display);
+#wrap {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--col_2);
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--myHeaders);
-
-}
-
-img {
-    max-width: 100%;
-}
-
-figcaption {
-    position: relative;
-    top: -150px;
-    font-size: 2.456rem;
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
-
-}
-
-.menu {
-    float: left;
-    width: 20%;
+#wrap .menu {
+	width: 25%;
     text-align: center;
     background-image: var(--nightClub);
-    padding: 1.234rem;
 }
 
-.menu a {
+#wrap .menu a {
     background-color: #e5e5e5;
-    padding: 8px;
-    margin-top: 7px;
     display: block;
-    width: 100%;
     color: black;
 }
 
-main {
-    float: left;
-    width: 60%;
-    padding: 0 20px;
+#wrap main {
+	width: 45%;
 }
 
-.right {
-    background-color: #e5e5e5;
-    float: left;
+#wrap .right {
+	width: 25%;
     width: 20%;
-    padding: 15px;
     margin-top: 7px;
     /*text-align: center;*/
-    background-image: url(../billeder/club-seamless.JPG);
-    color: var(--hell);
+    color: var(--dark);
+	background-color: var(--col_1)
 }
 
 /* layout styles */
@@ -118,10 +87,6 @@ header {
     padding: 15px;
     text-align: center;
     background-color: var(--col_2);
-}
-
-#wrap {
-    overflow: auto
 }
 
 footer {
@@ -137,7 +102,46 @@ footer {
     color: red;
 }
 
-/* ... one breakpoint here, you need three ... */
+h1 {
+    font-family: var(--display);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--myHeaders);
+}
+
+article h2 {
+	text-align: center;
+	font-size: 3rem;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figcaption {
+    position: relative;
+    top: -130px;
+    font-size: 5rem;
+	font-family: var(--display) ,sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+
 /* PS: in mobile first, the mobile is where we begin device optimization */
 
 /* Mobile First */
