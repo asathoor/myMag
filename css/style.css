@@ -22,26 +22,29 @@
 
 :root {
 
-    /* design colors */
-    --main-bg-color: #eaadea;
-    --dark: #000;
+    /* layout colors */
+    --main-bg-color: #fff;
+    --col_1: #fff;
+    --col_2: #fff;
+    --col_3: #fff;
+    --col_4: #fff;
+	--dark: #000;
     --hell: #fff;
-    --col_1: #adeaea;
-    --col_2: #d8e241;
-    --col_3: #41d8e2;
-    --col_4: #4c41e2;
-
+	
     /* display */
     --display: 'Spicy Rice', cursive;
+	
 
     /* headers */
     --myHeaders: 'Muli', sans-serif;
 
     /* text */
     --text: 'Open Sans', sans-serif;
-
+	
+	
+	
     /* textures */
-    --nightClub: url(../billeder/club-seamless.JPG);
+    /*--nightClub: url(../billeder/club-seamless.JPG);*/
 
 }
 
@@ -64,9 +67,9 @@ body {
 }
 
 #wrap .menu a {
-    background-color: #e5e5e5;
+    background-color: var(--col_4);
     display: block;
-    color: black;
+    color: var(--dark);
 }
 
 #wrap main {
@@ -75,7 +78,6 @@ body {
 
 #wrap .right {
 	width: 25%;
-    width: 20%;
     margin-top: 7px;
     /*text-align: center;*/
     color: var(--dark);
