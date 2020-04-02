@@ -153,15 +153,17 @@ figcaption {
  **/
 @media only screen and (max-width:620px) {
 
+	/*
     body {
         background-color: var(--col_3);
         padding: 0px;
         margin: 0px;
         font-size: larger;
     }
-
+	*/
     
     /* headings */
+	/*
     h2,
     h3,
     h4,
@@ -172,8 +174,10 @@ figcaption {
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
+	*/
  
     /* layout */ 
+	/*
     #wrap,
     header,
     footer,
@@ -188,7 +192,8 @@ figcaption {
         padding: 0px;
         background-color: var(--col_2);
         color: var(--dark);
-    }    
+    }
+	*/
 }
 
 
