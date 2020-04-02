@@ -24,10 +24,10 @@
 
     /* layout colors */
     --main-bg-color: #fff;
-    --col_1: #fff;
-    --col_2: #fff;
-    --col_3: #fff;
-    --col_4: #fff;
+    --col_1: lime;
+    --col_2: pink;
+    --col_3: yellow;
+    --col_4: aqua;
 	--dark: #000;
     --hell: #fff;
 	
@@ -44,7 +44,7 @@
 	
 	
     /* textures */
-    /*--nightClub: url(../billeder/club-seamless.JPG);*/
+    --nightClub: url(../billeder/club-seamless.JPG);
 
 }
 
@@ -78,7 +78,6 @@ body {
 
 #wrap .right {
 	width: 25%;
-    margin-top: 7px;
     /*text-align: center;*/
     color: var(--dark);
 	background-color: var(--col_1)
@@ -89,14 +88,15 @@ header {
     padding: 15px;
     text-align: center;
     background-color: var(--col_2);
+	background-image: var(--nightClub);
 }
 
 footer {
     background-color: #e5e5e5;
     text-align: center;
     padding: 10px;
-    margin-top: 7px;
     background-color: var(--col_1);
+	background-image: var(--nightClub);
 }
 
 /* SEO content exaggerated */
@@ -135,11 +135,11 @@ figure {
 
 figcaption {
     position: relative;
-    top: -130px;
+    top: -222px;
     font-size: 5rem;
 	font-family: var(--display) ,sans-serif;
     font-weight: bold;
-    color: #fff;
+    color: var(--col_4);
     text-align: center;
 }
 
